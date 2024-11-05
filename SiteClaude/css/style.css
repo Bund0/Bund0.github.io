@@ -18,6 +18,8 @@ body {
 
 main {
     padding: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 li {
@@ -67,7 +69,7 @@ li {
 
 .navbar a {
     display: block;
-    color: white;
+    color: #f9f9f9;
     text-align: center;
     padding: 0 0;
     margin: 0;
@@ -79,7 +81,7 @@ li {
     margin-left: -3vh;
     align-content: center;
     background-color: inherit;
-    color: white;
+    color: #f9f9f9;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -161,39 +163,59 @@ li {
 
 /* table */
 
-table {
-    border-collapse: collapse;
+.eventtbl {
+    background-color: #ffb700;
+    color: #280809;
     width: 100%;
 }
 
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+article p {
+    color: #d4b2b3;
 }
 
-th {
-    color: #ffb700;
-    background-color: #381b1c;
-}
-
-.tableevents {
-    text-align: center;
-    width: 50%;
-}
-
-.blancotdh {
-    border-top: 1px solid #280809;
-    border-left: 1px solid #280809;
-    border-right: 1px solid #280809;
-}
-
-.tdday {
-    font-size: 40px;
+.cropevent {
+    width: 100%;
 }
 
 /* varia */
+
+h1 {
+    font-weight: 999;
+    font-size: 4rem;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: #f9f9f9;
+}
+#h11 {
+    padding: 0;
+    margin-bottom: -21px;
+}
+#h12 {
+    padding: 0;
+    margin: 0;
+    margin-top: -35px;
+    font-size: 3rem;
+}
+
+#h21 {
+    margin-top: -5px;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.finger {
+    width: 16vw;
+    height: auto;
+    text-align: center;
+}
+
+.fingerpos {
+    text-align: right;
+    margin-top: -89px;
+}
 
 .hidenav,
 .hide {
@@ -250,7 +272,12 @@ th {
 .yellow_blocks {
     background-color: #ffb700;
     border-style: hidden;
-    height: 1vh;
+    height: 1.5vh;
+}
+.pink_blocks {
+    background-color: #d4b2b3;
+    border-style: hidden;
+    height: 1.5vh;
 }
 
 .blanco_blocks {
@@ -388,7 +415,7 @@ th {
     .dropbtn {
         margin: 0;
         background-color: #280809;
-        color: white;
+        color: #f9f9f9;
         padding: 25%;
         font-size: 1rem;
         border: none;
@@ -424,7 +451,64 @@ th {
     .dropdown-content a:hover {
         background-color: #381b1c;
     }
+
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 7rem;
+    }
+    
+    #h11 {
+        margin-bottom: -69px;
+    }
+    
+    #h12 {
+        margin-top: -55px;
+        font-size: 5.2rem;
+    }
+    
+    #h21 {
+        margin-top: -13px;
+        font-size: 1.33rem;
+    }
+    
+    #h13,
+    #h14 {
+        margin-bottom: -79px;
+    }
+
+    .finger {
+        width: 8vw;
+        height: auto;
+    }
+
+    .fingerpos {
+        text-align: right;
+        margin-top: -166px;
+    }
+    
+    .eventtbl {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 1vw;
+        gap: 1vw;
+    }
+    
+    .cropevent {
+        width: 100%;
+    }
+    
+    .yellow_blocks {
+        height: 2vh;
+    }
+    
+    .pink_blocks {
+        height: 2vh;
+    }
+    article p {
+        color: #d4b2b3;
     }
 }
