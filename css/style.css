@@ -254,7 +254,7 @@ h2 {
 
 .fingerpos {
     text-align: right;
-    margin-top: -89px;
+    margin-top: -13vh;
 }
 
 .hidenav,
@@ -328,6 +328,7 @@ h2 {
     display: grid;
     grid-template-columns: 0 76vw 3vw;
     gap: 13px;
+    width: 100%;
 }
 
 .kader {
@@ -339,9 +340,9 @@ h2 {
 }
 
 article {
-        padding-top: 3vh;
-        padding-left: 3vw;
-    }
+    padding-top: 3vh;
+    padding-left: 3vw;
+}
 
 footer {
     text-align: center;
@@ -366,10 +367,15 @@ footer table {
     padding-bottom: 3vh;
 }
 
-article div p{
+article div p {
     margin: 0;
 }
-
+#fp1 {
+    margin-top: -9vh;
+}
+#fp2 {
+    margin-top: 7vh;
+}
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
     main {
@@ -609,7 +615,7 @@ article div p{
 
     .fingerpos {
         text-align: right;
-        margin-top: -166px;
+        margin-top: -24vh;
     }
 
     .eventtbl {
@@ -653,8 +659,6 @@ article div p{
         margin-top: 0;
     }
 
-    
-
     footer {
         text-align: center;
         color: black;
@@ -676,5 +680,13 @@ article div p{
 
     #THM {
         padding-bottom: 3vh;
+    }
+
+    #fp1 {
+        margin-top: -166px;
+    }
+
+    #fp2 {
+        margin-top: 3vh;
     }
 }
