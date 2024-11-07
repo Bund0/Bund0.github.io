@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: arial, sans-serif;
 }
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -164,9 +169,12 @@ li {
 /* table */
 
 .eventtbl {
+    display: grid;
+    margin-top: 9vh;
     background-color: #ffb700;
     color: #280809;
     width: 100%;
+    row-gap: 21px;
 }
 
 article p {
@@ -200,7 +208,7 @@ h2 {
     font-size: 3rem;
 }
 
-#h21 {
+.h21 {
     margin-top: -5px;
     font-weight: lighter;
     font-size: 1rem;
@@ -210,9 +218,32 @@ h2 {
     margin-bottom: -47px;
 }
 
-#h15{
-    font-size: 2.7rem;
-    margin-top: -37px;
+#h15 {
+    font-size: 3.7rem;
+    margin-bottom: -49px;
+}
+
+#h16 {
+    font-size: 3.75rem;
+    margin-bottom: -53px;
+}
+
+#h17 {
+    font-size: 4.3rem;
+    margin-bottom: -53px;
+}
+
+#h18 {
+    margin-bottom: -51px;
+}
+
+#h19 {
+    margin-bottom: -51px;
+}
+
+#h20 {
+    font-size: 4.9rem;
+    margin-bottom: -55px;
 }
 
 .finger {
@@ -293,6 +324,52 @@ h2 {
     border-style: hidden;
 }
 
+.historytbl {
+    display: grid;
+    grid-template-columns: 0 76vw 3vw;
+    gap: 13px;
+}
+
+.kader {
+    width: 90%;
+    height: 333px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 13px;
+}
+
+article {
+        padding-top: 3vh;
+        padding-left: 3vw;
+    }
+
+footer {
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0;
+}
+footer p {
+    background-color: #ffb700;
+    margin: -0.1vh 0;
+    padding-top: 3vh;
+}
+
+footer table {
+    padding: 0;
+    margin: -0.1vw;
+    margin-top: 3vh;
+}
+
+#THM {
+    padding-bottom: 3vh;
+}
+
+article div p{
+    margin: 0;
+}
+
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
     main {
@@ -308,23 +385,27 @@ h2 {
         top: 33vh;
         width: 70vw;
     }
+    .finger {
+        margin-left: -55px;
+    }
 }
 @media only screen and (min-device-width: 600px) {
-    main {
-        padding-left: 7vw;
-        padding-right: 7vw;
-    }
-    .overlapImg {
-        top: 15vh;
-        width: 86vw;
-    }
-
     .slogan1 {
         top: 40vh;
-        width: 70vw;
+    }
+    .finger {
+        margin-left: -66px;
     }
 }
-@media only screen and (min-device-width: 933px) {
+@media only screen and (min-device-width: 800px) {
+    .slogan1 {
+        top: 49vh;
+    }
+    .finger {
+        margin-left: -69px;
+    }
+}
+@media only screen and (min-device-width: 1021px) {
     main {
         padding-left: 15vw;
         padding-right: 15vw;
@@ -371,7 +452,7 @@ h2 {
         position: fixed;
         top: 0;
         background-color: #280809;
-        width: 100vw;
+        width: 100%;
         height: 7vh;
         min-height: 70px;
         box-shadow:
@@ -410,14 +491,15 @@ h2 {
     .navitem {
         text-align: center;
         align-content: center;
-        margin-left: 2.5vw;
         box-shadow:
             0 0 20px 0 rgba(0, 0, 0, 0.5),
             inset 0 0 20px 0 rgba(0, 0, 0, 0.5);
     }
 
     .navitem a {
+        width: 123px;
         padding: 2vh;
+        display: inline-flex;
         text-decoration: none;
         color: #f9f9f9;
     }
@@ -459,6 +541,7 @@ h2 {
 
     .dropdown-content a:hover {
         background-color: #381b1c;
+        box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.5);
     }
 
     .dropdown:hover .dropdown-content {
@@ -479,7 +562,7 @@ h2 {
         font-size: 5.2rem;
     }
 
-    #h21 {
+    .h21 {
         margin-top: -13px;
         font-size: 1.33rem;
     }
@@ -488,15 +571,40 @@ h2 {
     #h14 {
         margin-bottom: -79px;
     }
-    
-    #h15{
-        font-size: 4.6rem;
+
+    #h15 {
+        font-size: 6.5rem;
         margin-top: 6px;
+        margin-bottom: -81px;
+    }
+
+    #h16 {
+        font-size: 6.55rem;
+        margin-bottom: -87px;
+    }
+
+    #h17 {
+        font-size: 7.45rem;
+        margin-bottom: -87px;
+    }
+
+    #h18 {
+        margin-bottom: -86px;
+    }
+
+    #h19 {
+        margin-bottom: -84px;
+    }
+
+    #h20 {
+        font-size: 9rem;
+        margin-bottom: -95px;
     }
 
     .finger {
         width: 8vw;
         height: auto;
+        margin-left: 0;
     }
 
     .fingerpos {
@@ -505,6 +613,7 @@ h2 {
     }
 
     .eventtbl {
+        margin-top: 13vh;
         display: grid;
         grid-template-columns: auto auto;
         padding: 1vw;
@@ -515,17 +624,57 @@ h2 {
         width: 100%;
     }
 
-    
     article p {
         font-size: 1.3rem;
         color: #d4b2b3;
     }
-    
+
     .yellow_blocks {
         height: 21px;
     }
 
     .pink_blocks {
         height: 21px;
+    }
+
+    .historytbl {
+        margin-top: 3vh;
+        display: grid;
+        grid-template-columns: auto auto 16.5vh;
+        gap: 13px;
+        padding: 3px;
+    }
+    .kader {
+        display: inline;
+        width: 100%;
+        height: 1000px;
+        z-index: 1;
+        position: absolute;
+        margin-top: 0;
+    }
+
+    
+
+    footer {
+        text-align: center;
+        color: black;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 0;
+    }
+    footer p {
+        background-color: #ffb700;
+        margin: 0;
+        padding-top: 3vh;
+    }
+
+    footer table {
+        padding: 0;
+        margin: -0.1vw;
+        margin-top: 7vh;
+    }
+
+    #THM {
+        padding-bottom: 3vh;
     }
 }
