@@ -174,7 +174,7 @@ li {
     background-color: #ffb700;
     color: #280809;
     width: 100%;
-    row-gap: 1.5vh;
+
 }
 
 article p {
@@ -199,7 +199,6 @@ h2 {
 }
 #h11 {
     padding: 0;
-    margin-bottom: -21px;
 }
 #h12 {
     padding: 0;
@@ -209,41 +208,41 @@ h2 {
 }
 
 .h21 {
-    margin-top: -5px;
+    margin-top: 1vh;
     font-weight: lighter;
     font-size: 1rem;
 }
 #h13,
 #h14 {
-    margin-bottom: -47px;
+    margin-bottom: -33px;
 }
 
 #h15 {
     font-size: 3.7rem;
-    margin-bottom: -49px;
+    margin-bottom: -29px;
 }
 
 #h16 {
     font-size: 3.75rem;
-    margin-bottom: -53px;
+    margin-bottom: -34px;
 }
 
 #h17 {
     font-size: 4.3rem;
-    margin-bottom: -53px;
+    margin-bottom: -34px;
 }
 
 #h18 {
-    margin-bottom: -51px;
+    margin-bottom: -34px;
 }
 
 #h19 {
-    margin-bottom: -51px;
+    margin-bottom: -34px;
 }
 
 #h20 {
     font-size: 4.9rem;
-    margin-bottom: -55px;
+    margin-bottom: -34px;
 }
 
 .finger {
@@ -347,7 +346,7 @@ article {
 footer {
     text-align: center;
     color: black;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 0;
 }
@@ -559,52 +558,48 @@ article div p {
         font-size: 7rem;
     }
 
-    #h11 {
-        margin-bottom: -69px;
-    }
-
     #h12 {
         margin-top: -55px;
         font-size: 5.2rem;
     }
 
     .h21 {
-        margin-top: -13px;
+        margin-top: 3vh;
         font-size: 1.33rem;
     }
 
     #h13,
     #h14 {
-        margin-bottom: -79px;
+        margin-bottom: -55px;
     }
 
     #h15 {
         font-size: 6.5rem;
         margin-top: 6px;
-        margin-bottom: -81px;
+        margin-bottom: -55px;
     }
 
     #h16 {
         font-size: 6.55rem;
-        margin-bottom: -87px;
+        margin-bottom: -57px;
     }
 
     #h17 {
         font-size: 7.45rem;
-        margin-bottom: -87px;
+        margin-bottom: -59px;
     }
 
     #h18 {
-        margin-bottom: -86px;
+        margin-bottom: -57px;
     }
 
     #h19 {
-        margin-bottom: -84px;
+        margin-bottom: -57px;
     }
 
     #h20 {
         font-size: 9rem;
-        margin-bottom: -95px;
+        margin-bottom: -65px;
     }
 
     .finger {
