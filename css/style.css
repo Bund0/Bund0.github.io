@@ -274,7 +274,6 @@ li {
 .eventtbl {
     display: grid;
     margin-top: 9vh;
-    background-color: #ffb700;
     color: #280809;
     width: 100%;
 }
@@ -441,7 +440,7 @@ h2 {
 }
 
 .k2 {
-    height: 200px;
+    height: 144px;
 }
 
 article {
@@ -470,7 +469,7 @@ footer p {
     font-size: 3rem;
 }
 
-.footertbl a{
+.footertbl a {
     text-decoration: none;
 }
 
@@ -480,8 +479,8 @@ footer table {
     margin-top: 3vh;
 }
 
-.fa{
-    color:#280809;
+.fa {
+    color: #280809;
 }
 
 #THM {
@@ -741,6 +740,7 @@ article div p {
         grid-template-columns: auto auto;
         padding: 21px;
         gap: 21px;
+        background-color: #ffb700;
     }
 
     .cropevent {
@@ -777,7 +777,7 @@ article div p {
     }
 
     .k2 {
-        height: 936px;
+        height: 666px;
     }
 
     footer {
