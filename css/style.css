@@ -21,6 +21,12 @@ body {
     font-size: 1rem;
 }
 
+.LocMap {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
 .mySlides {
     display: none;
     text-align: center;
