@@ -303,6 +303,11 @@ h1 {
 
 h2 {
     color: #f9f9f9;
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.3rem;
 }
 #h11 {
     padding: 0;
@@ -315,7 +320,7 @@ h2 {
 }
 
 .h21 {
-    margin-top: 1vh;
+    margin-top: 3vh;
     font-weight: lighter;
     font-size: 1rem;
 }
@@ -438,7 +443,7 @@ h2 {
 }
 
 .kader {
-    width: 90%;
+    width: 80%;
     height: 334px;
     z-index: 1;
     position: absolute;
@@ -502,6 +507,42 @@ article div p {
 #fp2 {
     margin-top: 7vh;
 }
+
+.ticketsgrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    gap: 3vw;
+    padding: 0 13vw;
+}
+
+.ticketsgrid a {
+    font-size: 2.5rem;
+    text-align: center;
+    align-content: center;
+    padding: 4vh 0;
+    color: #280809;
+    background-color: #ffb700;
+    text-decoration: none;
+    box-shadow:
+        0 0 20px 0 rgba(0, 0, 0, 0.5),
+        inset 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.ticketsgrid a:hover {
+    color: #ffb700;
+    background-color: #280809;
+    #lilthing{
+        color: #280809;
+    }
+}
+
+.ticketsgrid p{
+    background-color: inherit;
+    font-size: 1.5rem;
+    margin: 0 3vw;
+}
+
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
     main {
@@ -754,7 +795,7 @@ article div p {
     }
 
     article p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         color: #d4b2b3;
     }
 
@@ -776,14 +817,14 @@ article div p {
     .kader {
         display: inline;
         width: 100%;
-        height: 1000px;
+        height: 1233px;
         z-index: 1;
         position: absolute;
         margin-top: 0;
     }
 
     .k2 {
-        height: 949px;
+        height: 1449px;
     }
 
     footer {
