@@ -1,5 +1,12 @@
-function hamburg(x) {
-  x.classList.toggle("change");
+function toggleMenu() {
+  const dropdown = document.getElementById("myDropdown");
+  const hamburger = document.querySelector(".hamburger");
+
+  console.log(dropdown); // Check if dropdown is found
+  console.log(hamburger); // Check if hamburger is found
+
+  dropdown.classList.toggle("show");
+  hamburger.classList.toggle("change");
 }
 
 document.querySelectorAll(".dropdown-content a").forEach((item) => {
@@ -13,12 +20,6 @@ document.querySelectorAll(".dropdown-content a").forEach((item) => {
     hamburger.classList.remove("change");
   });
 });
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function dropDown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
