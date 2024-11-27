@@ -223,6 +223,12 @@ li {
     right: 0;
     text-decoration-skip: lead;
     font-weight: bold;
+    transition:
+        max-height 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+}
+dropdown-content.show{
+    display: inline;
 }
 
 .dropdown-content a {
@@ -532,12 +538,12 @@ article div p {
 .ticketsgrid a:hover {
     color: #ffb700;
     background-color: #280809;
-    #lilthing{
+    #lilthing {
         color: #280809;
     }
 }
 
-.ticketsgrid p{
+.ticketsgrid p {
     background-color: inherit;
     font-size: 1.5rem;
     margin: 0 3vw;
