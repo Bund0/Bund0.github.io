@@ -1,5 +1,6 @@
+// Toggle the menu when clicking the hamburger
 document.querySelector(".hamburger").addEventListener("click", toggleMenu);
-document.querySelector(".hamburger").addEventListener("touchstart", toggleMenu); // Add this for better mobile responsiveness
+document.querySelector(".hamburger").addEventListener("touchstart", toggleMenu);
 
 function toggleMenu() {
   const dropdown = document.getElementById("myDropdown");
@@ -12,16 +13,22 @@ function toggleMenu() {
   hamburger.classList.toggle("change");
 }
 
-document.querySelectorAll(".dropdown-content a").forEach((item) => {
-  item.addEventListener("click", () => {
-    // Close the dropdown menu
+// Close dropdown menu when a link is clicked
+document.querySelectorAll(".dropdown-content a").forEach((link) => {
+  link.addEventListener("click", () => {
     const dropdown = document.getElementById("myDropdown");
-    dropdown.classList.remove("show");
-
-    // Reset the hamburger icon animation
     const hamburger = document.querySelector(".hamburger");
+    dropdown.classList.remove("show");
     hamburger.classList.remove("change");
   });
+});
+
+// Close the menu when hash changes (same page navigation)
+window.addEventListener("hashchange", () => {
+  const dropdown = document.getElementById("myDropdown");
+  const hamburger = document.querySelector(".hamburger");
+  dropdown.classList.remove("show");
+  hamburger.classList.remove("change");
 });
 
 // Close the dropdown if the user clicks outside of it
