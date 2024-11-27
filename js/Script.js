@@ -1,3 +1,6 @@
+document.querySelector(".hamburger").addEventListener("click", toggleMenu);
+document.querySelector(".hamburger").addEventListener("touchstart", toggleMenu); // Add this for better mobile responsiveness
+
 function toggleMenu() {
   const dropdown = document.getElementById("myDropdown");
   const hamburger = document.querySelector(".hamburger");
