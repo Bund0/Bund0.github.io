@@ -2,6 +2,18 @@ function hamburg(x) {
   x.classList.toggle("change");
 }
 
+document.querySelectorAll(".dropdown-content a").forEach((item) => {
+  item.addEventListener("click", () => {
+    // Close the dropdown menu
+    const dropdown = document.getElementById("myDropdown");
+    dropdown.classList.remove("show");
+
+    // Reset the hamburger icon animation
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.classList.remove("change");
+  });
+});
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function dropDown() {
@@ -21,3 +33,10 @@ window.onclick = function (event) {
     }
   }
 };
+
+document.querySelectorAll(".dropdown-content a").forEach((item) => {
+  item.addEventListener("click", () => {
+    const dropdown = document.getElementById("myDropdown"); // Pas aan naar jouw dropdown-ID
+    dropdown.classList.remove("show"); // Zorg dat "show" de klasse is die het dropdown-menu opent
+  });
+});
