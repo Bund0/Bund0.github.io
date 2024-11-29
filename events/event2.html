@@ -8,7 +8,6 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link href="../css/style.css" rel="stylesheet" type="text/css" />
-        <script src="../js/Script.js"></script>
         <title>Kaffee Claude</title>
     </head>
 
@@ -19,7 +18,7 @@
                     <!-- first navbar !-->
                     <li class="hideham">
                         <div class="navbar dropdown">
-                            <button onclick="dropDown(); hamburg(this);" class="dropbtn">
+                            <button onclick="toggleMenu();" class="dropbtn">
                                 <span class="bar1"></span>
                                 <span class="bar2"></span>
                                 <span class="bar3"></span>
@@ -82,13 +81,15 @@
                     <strong>LET'S ROCK !!!</strong>
                 </p>
             </article>
+
             <footer class="ticketsgrid" style="">
                 <a href="https://eventix.shop/afayjanf">
                     PRESS HERE TO <br />BUY TICKETS!!
                     <p id="lilthing">or scan qr code <i class="fa fa-arrow-right"></i></p>
                 </a>
-                <a href="/img/URL.svg"><img src="/img/URL.svg" style="width: 289px" /></a>
+                <a href="/img/URL.svg"><img src="/img/URL.svg" class="URL" /></a>
             </footer>
         </main>
+        <script src="../js/Script.js"></script>
     </body>
 </html>

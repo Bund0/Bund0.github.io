@@ -523,7 +523,7 @@ article div p {
 }
 
 .ticketsgrid a {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     align-content: center;
     padding: 4vh 0;
@@ -545,10 +545,21 @@ article div p {
 
 .ticketsgrid p {
     background-color: inherit;
-    font-size: 1.5rem;
+    font-size: 0.79rem;
     margin: 0 3vw;
 }
 
+.URL{
+    width: 150px;
+    margin: 0 2vw;
+}
+
+#blanco{
+    margin: 0;
+    padding: 0;
+    max-height: 39.5vh;
+    max-width: 34vw;
+}
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
     main {
@@ -875,6 +886,44 @@ article div p {
         position: relative;
         margin: auto;
         margin-top: 7vh;
+    }
+    .ticketsgrid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        gap: 3vw;
+        padding: 0 13vw;
+    }
+
+    .ticketsgrid a {
+        font-size: 2.5rem;
+        text-align: center;
+        align-content: center;
+        padding: 4vh 0;
+        color: #280809;
+        background-color: #ffb700;
+        text-decoration: none;
+        box-shadow:
+            0 0 20px 0 rgba(0, 0, 0, 0.5),
+            inset 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .ticketsgrid a:hover {
+        color: #ffb700;
+        background-color: #280809;
+        #lilthing {
+            color: #280809;
+        }
+    }
+
+    .ticketsgrid p {
+        background-color: inherit;
+        font-size: 1.5rem;
+        margin: 0 3vw;
+    }
+    
+    .URL{
+        width: 289px;
     }
 }
 
