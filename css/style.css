@@ -254,6 +254,9 @@ li {
 }
 
 /* hamburger logo */
+.hamburger {
+    cursor: pointer;
+}
 
 .bar1,
 .bar2,
