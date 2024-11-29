@@ -2,18 +2,16 @@
 document.querySelector(".hamburger").addEventListener("click", toggleMenu);
 document.querySelector(".hamburger").addEventListener("touchstart", toggleMenu);
 
+// Toggle menu on hamburger click
 function toggleMenu() {
   const dropdown = document.getElementById("myDropdown");
   const hamburger = document.querySelector(".hamburger");
-
-  console.log(dropdown); // Check if dropdown is found
-  console.log(hamburger); // Check if hamburger is found
 
   dropdown.classList.toggle("show");
   hamburger.classList.toggle("change");
 }
 
-// Close dropdown menu when a link is clicked
+// Close dropdown when any link is clicked
 document.querySelectorAll(".dropdown-content a").forEach((link) => {
   link.addEventListener("click", () => {
     const dropdown = document.getElementById("myDropdown");
@@ -23,8 +21,9 @@ document.querySelectorAll(".dropdown-content a").forEach((link) => {
   });
 });
 
-// Close the menu when hash changes (same page navigation)
+// Ensure the menu closes when hash changes (same-page navigation)
 window.addEventListener("hashchange", () => {
+  console.log("Window click detected:", event.target); // Log the clicked element
   const dropdown = document.getElementById("myDropdown");
   const hamburger = document.querySelector(".hamburger");
   dropdown.classList.remove("show");
@@ -32,22 +31,12 @@ window.addEventListener("hashchange", () => {
 });
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-};
+window.addEventListener("click", (event) => {
+  const dropdown = document.getElementById("myDropdown");
+  const hamburger = document.querySelector(".hamburger");
 
-document.querySelectorAll(".dropdown-content a").forEach((item) => {
-  item.addEventListener("click", () => {
-    const dropdown = document.getElementById("myDropdown"); // Pas aan naar jouw dropdown-ID
-    dropdown.classList.remove("show"); // Zorg dat "show" de klasse is die het dropdown-menu opent
-  });
+  if (!dropdown.contains(event.target) && !hamburger.contains(event.target)) {
+    dropdown.classList.remove("show");
+    hamburger.classList.remove("change");
+  }
 });
