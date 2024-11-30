@@ -556,6 +556,7 @@ article div p {
 
 #blanco {
     margin: -12vh 0;
+    width: 100%;
 }
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
