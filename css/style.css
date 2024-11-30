@@ -549,16 +549,13 @@ article div p {
     margin: 0 3vw;
 }
 
-.URL{
+.URL {
     width: 150px;
     margin: 0 2vw;
 }
 
-#blanco{
-    margin: 0;
-    padding: 0;
-    max-height: 39.5vh;
-    max-width: 34vw;
+#blanco {
+    margin: -12vh 0;
 }
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
@@ -921,9 +918,16 @@ article div p {
         font-size: 1.5rem;
         margin: 0 3vw;
     }
-    
-    .URL{
+
+    .URL {
         width: 289px;
+    }
+    
+    #blanco {
+        margin: 0;
+        padding: 0;
+        max-height: 39.5vh;
+        max-width: 34vw;
     }
 }
 
