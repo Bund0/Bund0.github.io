@@ -84,15 +84,6 @@ img {
     bottom: 1.5vh;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -560,6 +551,7 @@ article div p {
 }
 iframe{
     border: none;
+    margin-bottom: 7vh;
 }
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
