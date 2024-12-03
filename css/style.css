@@ -211,7 +211,7 @@ li {
     min-width: 160px;
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
     right: 0;
     text-decoration-skip: lead;
     font-weight: bold;
@@ -443,7 +443,7 @@ h3 {
 .kader {
     width: 80%;
     height: 334px;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     margin-top: 13px;
 }
@@ -556,13 +556,89 @@ iframe {
     width: 79%;
     height: 55vh;
 }
-.RWposter{
-    width: 70%;
+.RWposter {
+    width: 89%;
+}
+/* openingsuren */
+#opening-hours {
+    margin: 20px 0;
+    text-align: center;
+    width: 55%;
+    float: right;
+}
+
+#opening-hours h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #d4b2b3;
+}
+
+#opening-hours table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#opening-hours td {
+    padding: 10px;
+    text-align: center;
+}
+
+.even-row {
+    background-color: #280809;
+}
+
+.odd-row {
+    background-color: #381b1c;
+}
+
+.btntbl {
+    font-size: 1.78rem;
+    font-weight: bold;
+}
+.btntbl a {
+    text-decoration: none;
+    color: #280809;
+    background-color: #ffb700;
+    text-align: center;
+    padding: 1vh;
+    margin: 0.3vh;
+}
+
+.btntbl a:hover {
+    color: #d4b2b3;
+    background-color: #280809;
+    border: 1px solid #d4b2b3;
+}
+
+.menu {
+    margin-top: 13vh;
+    border: 1px solid #d4b2b3;
+    padding: 0;
+}
+
+.menu th {
+    border: 1px solid #d4b2b3;
+    padding: 1vh;
+}
+
+.menu td {
+    border-bottom: 1px solid #d4b2b3;
+}
+
+.yellow-block {
+    position: inline;
+    background-color: #ffb700;
+    width: var(--width);
+    height: var(--height);
+    z-index: 10;
+    top: var(--top);
+    left: var(--left);
 }
 
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
-    .RWposter{
+    .RWposter {
         float: left;
         width: 34%;
         margin-right: 1.5vw;
@@ -839,7 +915,7 @@ iframe {
     .kader {
         display: inline;
         width: 100%;
-        height: 1233px;
+        height: 1234px;
         z-index: 1;
         position: absolute;
         margin-top: 0;
