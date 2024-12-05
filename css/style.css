@@ -625,9 +625,11 @@ iframe {
 .menu td {
     border-bottom: 1px solid #d4b2b3;
 }
+
 yellow-block {
     display: none;
 }
+
 .spacing{
     margin-right: 0;
 }
