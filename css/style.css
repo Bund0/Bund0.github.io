@@ -625,10 +625,14 @@ iframe {
 .menu td {
     border-bottom: 1px solid #d4b2b3;
 }
+
 yellow-block {
     display: none;
 }
 
+.spacing{
+    margin-right: 0;
+}
 /*responsivness */
 @media only screen and (min-device-width: 500px) {
     .yellow-block {
@@ -659,6 +663,9 @@ yellow-block {
     .finger {
         margin-left: -55px;
     }
+    .spacing{
+    margin-right: 1rem;
+}
 }
 @media only screen and (min-device-width: 600px) {
     .slogan1 {
