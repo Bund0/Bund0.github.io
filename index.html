@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="nl-be">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZ8WM5K2V3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-FZ8WM5K2V3");
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/ico" href="img/logo.ico" />
@@ -8,9 +19,11 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <title>Kaffee Claude</title>
+        <title>Kaffee Claude - Lokaal café met Live evenementen Haacht</title>
+        <meta
+            name="description"
+            content="Geniet van de beste dranken, het lekkerste eten, live events en de familiale sfeer van Kaffee Claude. Ontdek onze unieke bieren en wekeleijkse events." />
     </head>
-
     <body>
         <header>
             <nav class="header_home">
@@ -29,8 +42,12 @@
                                 <a href="#a4">DRINKS &amp; FOODS</a>
                                 <a href="#a5">GALLERY</a>
                                 <a href="#a6">FOR GREENBEES</a>
-                                <a href="#a7">CONTACT</a>
                                 <a href="forthebands.html">FOR ARTISTS/BANDS</a>
+                                <!--<a href="forthefans.html">FOR OUR FANS</a>!-->
+                                <a href="#a7"
+                                    >CONTACT<br />
+                                    &amp; openingsuren</a
+                                >
                             </div>
                         </div>
                     </li>
@@ -40,8 +57,12 @@
                         <div class="dropdown-content">
                             <a href="#a2">HISTORY</a>
                             <a href="#a6">FOR GREENBEES</a>
-                            <a href="#a7">CONTACT</a>
                             <a href="forthebands.html">FOR ARTISTS/BANDS</a>
+                            <!--<a href="forthefans.html">FOR OUR FANS</a>!-->
+                            <a href="#a7"
+                                >CONTACT<br />
+                                &amp; openingsuren</a
+                            >
                         </div>
                     </li>
                     <li class="hidenav navitem"><a href="#a5">GALLERY</a></li>
@@ -87,13 +108,15 @@
                     <td id="a1" style="width: 6%" class="yellow_blocks"></td>
                 </tr>
             </table>
-            <div>
-                <h1 id="h11">WHAT&apos;S</h1>
-                <h1 id="h12">GOING ON</h1>
-                <div class="fingerpos" id="fp1">
+            <div class="dnatbl">
+                <div class="titles">
+                    <h1>WHAT&apos;S</h1>
+                    <h1 id="h12">GOING ON</h1>
+                    <h2 class="h21">UPCOMING SHOWS</h2>
+                </div>
+                <div class="fingerpos">
                     <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
                 </div>
-                <h2 class="h21" style="margin-top: 1vh">UPCOMING SHOWS</h2>
             </div>
 
             <!-- events toevoegen doe je hier !-->
@@ -101,16 +124,29 @@
                 <a href="events/event2.html">
                     <img
                         loading="lazy"
-                        src="img/events/Rommelstein.webp"
-                        alt="Wasted Potential en Rommelstein in Kaffee Claude. Zaterdag 7 december 2024 om 20u30. Gratis inkom"
+                        src="img/events/clublagoon.webp"
+                        alt="Club Lagoon party in Kaffee Claude. Vrijdag 13 december 2024 om 21u. Gratis inkom"
                         class="cropevent" />
                 </a>
-
+                <a href="events/event13.html">
+                    <img
+                        loading="lazy"
+                        src="img/events/JohnnyTrash.webp"
+                        alt="15 jaar Johnny Trash in Kaffee Claude. Zondag 15 december 2024 om 15u15. 22€15"
+                        class="cropevent" />
+                </a>
                 <a href="events/event3.html">
                     <img
                         loading="lazy"
                         src="img/events/Eleven_woods.webp"
                         alt="Eleven woods in Kaffee Claude. Op Donderdag 19 December 2024 om 21 uur. Gratis inkom"
+                        class="cropevent" />
+                </a>
+                <a href="events/frievent.html"
+                    ><img
+                        loading="lazy"
+                        src="img/events/WeeklyLoadTheWKND.gif"
+                        alt="Load the weekend party"
                         class="cropevent" />
                 </a>
                 <a href="events/event4.html"
@@ -120,11 +156,25 @@
                         alt="pretpunk en rockmix in Kaffee Claude met Ramones van het Groenewoud en the Substitutes. Op Zaterdag 21 December 2024 om 21 uur. Gratis inkom"
                         class="cropevent" />
                 </a>
+                <a href="events/event1.html"
+                    ><img
+                        loading="lazy"
+                        src="img/events/ChristmasParty.webp"
+                        alt="X-mas party Vrijdag 27 December om 21 uur in Claude"
+                        class="cropevent" />
+                </a>
+                <a href="events/event14.html">
+                    <img
+                        loading="lazy"
+                        src="img/events/newyear.gif"
+                        alt="New Years Eve 2025 Party @KaffeeClaude op 31 December. Tickets met eten inbegrepen zijn 70€ en alleen dansen voor maar 10€."
+                        class="cropevent" />
+                </a>
                 <a href="events/event5.html"
                     ><img
                         loading="lazy"
                         src="img/events/ComedyClubYgorvanPopperinge.webp"
-                        alt="Comedy Club Claude affiche met Ygor van Poperingen, Donderdag 9 Januari 2025 om 20 uur 30. 15 euro inkom, tickets verkrijgbaar in onze ticketshop"
+                        alt="Comedy Club Claude affiche met Ygor van Poperingen, Donderdag 9 Januari 2025 om 20 uur 30. 15 euro inkom, tickets verkrijgbaar in onze"
                         class="cropevent" />
                 </a>
                 <a href="events/event6.html"
@@ -135,7 +185,18 @@
                         class="cropevent" />
                 </a>
                 <a href="events/event7.html"
-                    ><img loading="lazy" src="img/events/Chouchou.webp" alt="Chouchou " class="cropevent" />
+                    ><img
+                        loading="lazy"
+                        src="img/events/Chouchou.webp"
+                        alt="Chouchou est la in Claude op Zaterdag 25 Januari 2025, gratis inkom!"
+                        class="cropevent" />
+                </a>
+                <a href="events/event15.html"
+                    ><img
+                        loading="lazy"
+                        src="img/events/dndd.webp"
+                        alt="You don't need a dick to DJ in Kaffee Claude op Vrijdag 31 Januari 2025, gratis inkom!"
+                        class="cropevent" />
                 </a>
                 <a href="events/event8.html"
                     ><img
@@ -172,16 +233,9 @@
                         alt="Claude Comedy Club affiche met Yannick Noben, Donderdag 1 Mei 2025 om 20 uur 30."
                         class="cropevent" />
                 </a>
-                <a href="events/blanco.html">
-                    <img loading="lazy" src="img/events/blanco.svg" id="blanco" alt="blanco poster" class="cropevent" />
+                <a href="https://eventix.shop/afayjanf" style="display: none;">
+                    <img loading="lazy" src="img/events/blanco.webp" alt="blanco poster" class="cropevent" />
                 </a>
-                <!-- <a href="events/event1.html"
-                    ><img
-                        loading="lazy"
-                        src="img/events/ComedyClubErhanDemirci.webp"
-                        alt="Comedy Club Claude affiche met Erhan Demirci, woensdag 4 December 2024 om 20 uur 30. 15 euro inkom, tickets verkrijgbaar in onze ticketshop"
-                        class="cropevent" />
-                </a> !-->
             </div>
             <table style="margin-top: 21vh; width: 100%">
                 <tr>
@@ -209,22 +263,23 @@
                 </tr>
             </table>
             <svg class="kader">
-                <rect width="25" height="76" x="21" y="187" style="fill: #ffb700"></rect>
-                <rect width="42" height="25" x="21" y="313" style="fill: #ffb700"></rect>
-                <rect width="25" height="25" x="345" y="77" style="fill: #ffb700"></rect>
+                <rect width="25" height="55" x="21" y="217" style="fill: #ffb700"></rect>
+                <rect width="39" height="25" x="21" y="303" style="fill: #ffb700"></rect>
+                <rect width="25" height="25" x="330" y="43" style="fill: #ffb700"></rect>
             </svg>
-            <div class="historytbl">
-                <div style="margin-top: 2vh">
+            <div class="historytbl" style="margin-top: 3vh">
+                <div>
                     <img loading="lazy" src="img/Fotos/Claude.webp" alt="Claude in 1920" height="90%" />
                 </div>
-
-                <div>
-                    <h1 id="h13">CLAUDE</h1>
-                    <h1 id="h14">FROM</h1>
-                    <h1>START</h1>
-                </div>
-                <div id="fp2">
-                    <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                <div class="dnatbl">
+                    <div class="titles">
+                        <h1>CLAUDE</h1>
+                        <h1>FROM</h1>
+                        <h1>START</h1>
+                    </div>
+                    <div class="fingerpos">
+                        <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                    </div>
                 </div>
             </div>
 
@@ -255,9 +310,7 @@
                     steeds bestaande zitbanken werden geplaatst om plaats te bieden voor de muziekbands. De bands die
                     hier optraden, moesten vaak bukken om niet tegen het lage plafond te stoten, al gebeurde dit wel
                     eens onder het enthousiasme. <br />
-                    <span
-                        class="yellow-block spacing"
-                        style="--pad: 83px 14px 54px 14px; --left: -43px"></span>
+                    <span class="yellow-block spacing" style="--pad: 83px 14px 54px 14px; --left: -43px"></span>
                     Dit jonge publiek was vaak onder het voorwendsel van een bezoek aan de woensdagmarkt aanwezig,
                     hoewel velen nooit daadwerkelijk de markt bezochten. Boze ouders wachtten vaak geduldig aan de
                     voordeur, terwijl hun kinderen via de vluchtdeur aan de achterzijde van het pand ontsnapten.
@@ -275,7 +328,7 @@
                     draad. Hij was een pionier in de culinaire verkenning.
                 </p>
                 <a href="img/Fotos/rockWerchterAffiche.jpg"
-                    ><img loading="lazy" src="img/Fotos/rockWerchterAffiche.jpg" alt="Claude in 1975" class="RWposter"
+                    ><img loading="lazy" src="img/Fotos/rockWerchterAffiche.webp" alt="Claude in 1975" class="RWposter"
                 /></a>
                 <p>Het café was tevens één van de eerste locaties waar men in 1975 Rock Werchter-kaarten kon kopen.</p>
 
@@ -299,6 +352,7 @@
                     <br />De quote: <strong>“IT’S IN MY DNA”</strong> vat dan ook treffend de betekenis van deze
                     legendarische ontmoetingsplek samen.
                 </p>
+                <br />
                 <p><strong>OPROEP</strong>: Wie wil het eerste <strong>Kaffee Claude</strong> boek schrijven ?</p>
             </article>
             <table style="margin-top: 21vh; width: 100%">
@@ -327,12 +381,14 @@
                 </tr>
             </table>
             <div>
-                <div>
-                    <h1 id="h15">DRINKS</h1>
-                    <h1>&amp;FOOD</h1>
-                </div>
-                <div class="fingerpos" id="fp3">
-                    <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                <div class="dnatbl">
+                    <div class="titles">
+                        <h1 id="h15">DRINKS</h1>
+                        <h1>&amp;FOOD</h1>
+                    </div>
+                    <div class="fingerpos">
+                        <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                    </div>
                 </div>
             </div>
             <span class="yellow-block" style="--pad: 5px 24px; --left: 21px"></span>
@@ -383,9 +439,7 @@
                     seizoensgebonden en varieert regelmatig, dus vraag er gerust naar!
                 </p>
                 <p>
-                    <span
-                        class="yellow-block spacing"
-                        style="--pad: 133px 14px 134px 14px; --left: -43px"></span>
+                    <span class="yellow-block spacing" style="--pad: 133px 14px 134px 14px; --left: -43px"></span>
                     Dagelijks serveren wij <strong>verse soep</strong> met brood, variërend in smaken. Zeker de moeite
                     waard om naar te vragen.
                 </p>
@@ -413,6 +467,14 @@
                 <a href="drinks.html">Drinks</a>
                 <a href="food.html">Foods</a>
             </div>
+            <article>
+                <h2>Tijdelijk biertje!</h2>
+                <img src="img/20241205-sint-barbara.webp" alt="Sint-Barbara" style="width: 100%" />
+                <img
+                    src="img/dobbelpalm.gif"
+                    alt="de kerstmis bieren palm dobbel en tongerlo christmas zijn terug!"
+                    style="width: 100%" />
+            </article>
             <table style="margin-top: 21vh; width: 100%">
                 <tr>
                     <td style="width: 3%" class="pink_blocks hide"></td>
@@ -439,13 +501,15 @@
                 </tr>
             </table>
             <div>
-                <div>
-                    <h1 id="h16">SOME BEST</h1>
-                    <h1 id="h17">MOMENTS</h1>
-                    <h1>CAPTURED</h1>
-                </div>
-                <div class="fingerpos">
-                    <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                <div class="dnatbl">
+                    <div class="titles">
+                        <h1 id="h16">SOME BEST</h1>
+                        <h1 id="h17">MOMENTS</h1>
+                        <h1>CAPTURED</h1>
+                    </div>
+                    <div class="fingerpos">
+                        <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                    </div>
                 </div>
             </div>
             <div class="slideshow-container">
@@ -466,7 +530,7 @@
 
                 <div class="mySlides fade">
                     <img src="img/Fotos/4.webp" class="slidecrop" />
-                    <div class="text">Belgian Asociality</div>
+                    <div class="text">Aperol Spritz party</div>
                 </div>
 
                 <div class="mySlides fade">
@@ -519,19 +583,21 @@
                 </tr>
             </table>
             <div>
-                <div>
-                    <h1 id="h18">CLAUDE</h1>
-                    <h1 id="h19">GOES</h1>
-                    <h1>GREEN</h1>
-                    <p style="margin-top: -25px; margin-bottom: 3vh">
-                        <span class="yellow-block" style="--pad: 5px 22px; --left: 283px"></span>
-                    </p>
-                </div>
-                <div class="fingerpos">
-                    <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                <div class="dnatbl">
+                    <div class="titles">
+                        <h1>CLAUDE</h1>
+                        <h1>GOES</h1>
+                        <h1>GREEN</h1>
+                    </div>
+                    <div class="fingerpos">
+                        <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                    </div>
                 </div>
             </div>
             <article style="margin-top: 3vh">
+                <p style="margin-top: -25px; margin-bottom: 3vh">
+                    <span class="yellow-block" style="--pad: 5px 22px; --left: 225px"></span>
+                </p>
                 <p>
                     Bij Kaffee Claude kiezen we bewust voor duurzaamheid, zowel in onze drank- als eetkaart als in onze
                     bredere ecologische aanpak. Wij hechten veel waarde aan de korte keten en hebben daarnaast
@@ -539,9 +605,7 @@
                     en zo ons DNA te bewaren.
                 </p>
                 <p>
-                    <span
-                        class="yellow-block spacing"
-                        style="--pad: 104px 14px 25px 14px; --left: -44px"></span>
+                    <span class="yellow-block spacing" style="--pad: 104px 14px 25px 14px; --left: -44px"></span>
                     Onze zonnepanelen zijn strategisch geplaatst: we hebben ze op het oosten, zuiden en westen van het
                     gebouw, zodat we elk zonnestraaltje van de dag kunnen omzetten in elektriciteit.
                 </p>
@@ -569,9 +633,7 @@
                     resulteerde in een welverdiende 10 van de milieu-inspectie.
                 </p>
                 <p>
-                    <span
-                        class="yellow-block spacing"
-                        style="--pad: 106px 14px 131px 14px; --left: -44px"></span>
+                    <span class="yellow-block spacing" style="--pad: 106px 14px 131px 14px; --left: -44px"></span>
                     Onze servetten zijn van gerecycled papier, terwijl het papier voor onze drankenkaarten en line-ups
                     afkomstig is van hennep. Ook ons vintage servies en de kookpotten zijn volledig gerecycled en ons
                     interieur is het resultaat van upcycling waar mogelijk.
@@ -609,12 +671,16 @@
                 </tr>
             </table>
             <div>
-                <h1 id="h20">STAY</h1>
-                <h1>CONNECTED</h1>
-                <div class="fingerpos">
-                    <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                <div class="dnatbl">
+                    <div class="titles">
+                        <h1 id="h20">STAY</h1>
+                        <h1 id="h13">CONNECTED</h1>
+                        <h2 class="h21">FOLLOW US</h2>
+                    </div>
+                    <div class="fingerpos">
+                        <img loading="lazy" src="img/fingerprint+slogan.png" alt="fingerprint+slogan" class="finger" />
+                    </div>
                 </div>
-                <h2 class="h21">FOLLOW US</h2>
                 <svg width="100%" height="69">
                     <rect width="26" height="55" x="0" y="10" style="fill: #ffb700"></rect>
                     <rect width="34" height="26" x="189" y="44" style="fill: #ffb700"></rect>
@@ -622,52 +688,53 @@
                 </svg>
             </div>
             <article>
-                <h2>CONTACT US</h2>
-                <a href="mailto:info@kaffeeclaude.be"><p>info@kaffeeclaude.be</p></a>
-                <p>+32475 31 04 62</p>
-                <div>
-                    <p>STATIONSSTRAAT 50</p>
-                    <p>3150 HAACHT</p>
-                    <p>BELGIUM</p>
+                <div class="Hourstbl">
+                    <div>
+                        <h2>CONTACT US</h2>
+                        <a href="mailto:info@kaffeeclaude.be"><p>info@kaffeeclaude.be</p></a>
+                        <p>+32 475 31 04 62</p>
+                        <p>STATIONSSTRAAT 50</p>
+                        <p>3150 HAACHT</p>
+                        <p>BELGIUM</p>
+                        <br />
+                        <p>PARKING:</p>
+                        <p>‘t KLAPGAT</p>
+                    </div>
+                    <section id="opening-hours">
+                        <h2>Openingsuren</h2>
+                        <table>
+                            <tr class="even-row">
+                                <td>Maandag</td>
+                                <td>11:00 - 22:00</td>
+                            </tr>
+                            <tr class="odd-row">
+                                <td>Dinsdag</td>
+                                <td>11:00 - 00:00</td>
+                            </tr>
+                            <tr class="even-row">
+                                <td>Woensdag</td>
+                                <td>11:00 - 00:00</td>
+                            </tr>
+                            <tr class="odd-row">
+                                <td>Donderdag</td>
+                                <td>11:00 - 00:00</td>
+                            </tr>
+                            <tr class="even-row">
+                                <td>Vrijdag</td>
+                                <td>11:00 - 03:00</td>
+                            </tr>
+                            <tr class="odd-row">
+                                <td>Zaterdag</td>
+                                <td>11:00 - 03:00</td>
+                            </tr>
+                            <tr class="even-row">
+                                <td>Zondag</td>
+                                <td>11:00 - 22:00</td>
+                            </tr>
+                        </table>
+                    </section>
                 </div>
-                <br />
-                <section id="opening-hours">
-                    <h2>Openingsuren</h2>
-                    <table>
-                        <tr class="even-row">
-                            <td>Maandag</td>
-                            <td>11:00 - 22:00</td>
-                        </tr>
-                        <tr class="odd-row">
-                            <td>Dinsdag</td>
-                            <td>11:00 - 00:00</td>
-                        </tr>
-                        <tr class="even-row">
-                            <td>Woensdag</td>
-                            <td>11:00 - 00:00</td>
-                        </tr>
-                        <tr class="odd-row">
-                            <td>Donderdag</td>
-                            <td>11:00 - 00:00</td>
-                        </tr>
-                        <tr class="even-row">
-                            <td>Vrijdag</td>
-                            <td>11:00 - 03:00</td>
-                        </tr>
-                        <tr class="odd-row">
-                            <td>Zaterdag</td>
-                            <td>11:00 - 03:00</td>
-                        </tr>
-                        <tr class="even-row">
-                            <td>Zondag</td>
-                            <td>11:00 - 22:00</td>
-                        </tr>
-                    </table>
-                </section>
-                <div>
-                    <p>PARKING:</p>
-                    <p>‘t KLAPGAT</p>
-                </div>
+
                 <div style="overflow: hidden; max-width: 100%; width: 500px; height: 500px; margin: 3vh 0">
                     <div id="my-map-display" style="height: 100%; width: 100%; max-width: 100%">
                         <iframe
@@ -679,7 +746,7 @@
                 </div>
             </article>
             <footer>
-                <table style="width: 100.3%; margin-bottom: -3px">
+                <table style="width: 100.3%; margin-bottom: -2px">
                     <tr>
                         <td style="width: 6%" class="yellow_blocks"></td>
                         <td style="width: 4%" class="blanco_blocks"></td>
@@ -711,7 +778,7 @@
                         class="fa fa-instagram"></a>
                     <a href="mailto:info@kaffeeclaude.be" class="fa fa-envelope"></a>
                 </div>
-                <table style="width: 100.3%; margin-top: -3px">
+                <table style="width: 100.3%; margin-top: -2px">
                     <tr>
                         <td style="width: 3%" class="yellow_blocks hide"></td>
                         <td style="width: 1%" class="blanco_blocks hide"></td>

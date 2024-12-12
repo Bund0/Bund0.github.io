@@ -1,10 +1,25 @@
 <!doctype html>
 <html lang="nl-be">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZ8WM5K2V3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-FZ8WM5K2V3");
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Menu's - Food</title>
+        <title>Kaffee Claude - Voedselkaart</title>
+        <meta name="description" content="Ontdek hier ons overheerlijk eten op onze voedselkaart" />
         <link rel="icon" type="image/ico" href="img/logo.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/Script.js"></script>
     </head>
@@ -16,7 +31,7 @@
                     <!-- first navbar !-->
                     <li class="hideham">
                         <div class="navbar dropdown">
-                            <button onclick="toggleMenu();" class="dropbtn">
+                            <button onclick="toggleMenu();" class="hamburger dropbtn">
                                 <span class="bar1"></span>
                                 <span class="bar2"></span>
                                 <span class="bar3"></span>
@@ -27,8 +42,12 @@
                                 <a href="../index.html#a4">DRINKS &amp; FOODS</a>
                                 <a href="../index.html#a5">GALLERY</a>
                                 <a href="../index.html#a6">FOR GREENBEES</a>
-                                <a href="../index.html#a7">CONTACT</a>
                                 <a href="../forthebands.html">FOR ARTISTS/BANDS</a>
+                                <!--<a href="../forthefans.html">FOR OUR FANS</a>!-->
+                                <a href="#a7"
+                                    >CONTACT<br />
+                                    &amp; openingsuren</a
+                                >
                             </div>
                         </div>
                     </li>
@@ -38,8 +57,12 @@
                         <div class="dropdown-content">
                             <a href="../index.html#a2">HISTORY</a>
                             <a href="../index.html#a6">FOR GREENBEES</a>
-                            <a href="../index.html#a7">CONTACT</a>
                             <a href="../forthebands.html">FOR ARTISTS/BANDS</a>
+                            <!--<a href="../forthefans.html">FOR OUR FANS</a>!-->
+                            <a href="#a7"
+                                >CONTACT<br />
+                                &amp; openingsuren</a
+                            >
                         </div>
                     </li>
                     <li class="hidenav navitem"><a href="../index.html#a5">GALLERY</a></li>
@@ -53,97 +76,97 @@
         </header>
         <main>
             <table class="menu">
-                <tr>
+                <tr class="even-row">
                     <th>Knabbeltjes</th>
-                    <th></th>
+                    <td></td>
                     <th>Prijs</th>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>Chips zout/paprika/pickles</td>
                     <td></td>
                     <td>2,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>nacho's pikante salsa</td>
                     <td></td>
                     <td>7,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>nacho's met warme cheddar kaas</td>
                     <td></td>
                     <td>7,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>Pikant bierworstje</td>
                     <td></td>
                     <td>4,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>Bierworst van de boerderij</td>
                     <td></td>
                     <td>4,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>Bordje mix (salami + kaas + amsterdams uitje + augurk + olijven)</td>
                     <td></td>
                     <td>7,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>10 bitterballen</td>
                     <td></td>
                     <td>8,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>Party Mix (mix 8 partysnacks)</td>
                     <td></td>
                     <td>8,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>Ovenschotel van de dag</td>
                     <td></td>
                     <td>15,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>Chili con/sin Carne met Nacho's/rijst</td>
                     <td></td>
                     <td>15,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>Spaghetti Bolognese</td>
                     <td></td>
                     <td>13,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>Boulet Local</td>
                     <td></td>
                     <td>3,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>Cervela met mosterd</td>
                     <td></td>
                     <td>3,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>Verse soep met brood</td>
                     <td></td>
                     <td>5,50 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>Spek met eieren + brood</td>
                     <td></td>
                     <td>7,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>&emsp; &emsp;+ optie witte bonen</td>
                     <td></td>
                     <td>2,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>croque uit't vuistje</td>
                     <td></td>
                     <td>5,00 &euro;</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>hardgekookt eitje</td>
                     <td></td>
                     <td>1,00 &euro;</td>
@@ -151,6 +174,65 @@
             </table>
             <p>De keuken is open tot 19u. Na 19u mogelijk op aanvraag aan het barpersoneel.</p>
             <p>Reservatie kan steeds bij Katleen op 0475 31 04 62</p>
+            <footer>
+                <table style="width: 100.3%; margin-bottom: -2px">
+                    <tr>
+                        <td style="width: 6%" class="yellow_blocks"></td>
+                        <td style="width: 4%" class="blanco_blocks"></td>
+                        <td style="width: 8%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 7%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 8%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 6%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 9%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 4%" class="yellow_blocks hide"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 3%" class="yellow_blocks hide"></td>
+                    </tr>
+                </table>
+                <div class="footertbl">
+                    <a href="https://www.facebook.com/profile.php?id=100094290714017" class="fa fa-facebook"></a>
+                    <a
+                        href="https://www.instagram.com/kaffeeclaude?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="fa fa-instagram"></a>
+                    <a href="mailto:info@kaffeeclaude.be" class="fa fa-envelope"></a>
+                </div>
+                <table style="width: 100.3%; margin-top: -2px">
+                    <tr>
+                        <td style="width: 3%" class="yellow_blocks hide"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 4%" class="yellow_blocks hide"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 9%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 6%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 8%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 7%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 8%" class="yellow_blocks"></td>
+                        <td style="width: 4%" class="blanco_blocks"></td>
+                        <td style="width: 6%" class="yellow_blocks"></td>
+                    </tr>
+                </table>
+            </footer>
         </main>
     </body>
 </html>

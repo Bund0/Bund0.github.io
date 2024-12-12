@@ -1,9 +1,24 @@
 <!doctype html>
 <html lang="nl-be">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZ8WM5K2V3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-FZ8WM5K2V3");
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Menu's - Drinks</title>
+        <title>Kaffee Claude - Drankenkaart</title>
+        <meta name="description" content="Ontdek hier onze uitgebreide dranken assortiment op onze drankenkaart" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="icon" type="image/ico" href="img/logo.ico" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script src="js/Script.js"></script>
@@ -16,7 +31,7 @@
                     <!-- first navbar !-->
                     <li class="hideham">
                         <div class="navbar dropdown">
-                            <button onclick="toggleMenu();" class="dropbtn">
+                            <button onclick="toggleMenu();" class="hamburger dropbtn">
                                 <span class="bar1"></span>
                                 <span class="bar2"></span>
                                 <span class="bar3"></span>
@@ -27,8 +42,12 @@
                                 <a href="../index.html#a4">DRINKS &amp; FOODS</a>
                                 <a href="../index.html#a5">GALLERY</a>
                                 <a href="../index.html#a6">FOR GREENBEES</a>
-                                <a href="../index.html#a7">CONTACT</a>
                                 <a href="../forthebands.html">FOR ARTISTS/BANDS</a>
+                                <!--<a href="../forthefans.html">FOR OUR FANS</a>!-->
+                                <a href="#a7"
+                                    >CONTACT<br />
+                                    &amp; openingsuren</a
+                                >
                             </div>
                         </div>
                     </li>
@@ -38,8 +57,12 @@
                         <div class="dropdown-content">
                             <a href="../index.html#a2">HISTORY</a>
                             <a href="../index.html#a6">FOR GREENBEES</a>
-                            <a href="../index.html#a7">CONTACT</a>
                             <a href="../forthebands.html">FOR ARTISTS/BANDS</a>
+                            <!--<a href="../forthefans.html">FOR OUR FANS</a>!-->
+                            <a href="#a7"
+                                >CONTACT<br />
+                                &amp; openingsuren</a
+                            >
                         </div>
                     </li>
                     <li class="hidenav navitem"><a href="../index.html#a5">GALLERY</a></li>
@@ -53,495 +76,618 @@
         </header>
         <main>
             <table class="menu">
-                <tr>
-                    <th>Bieren van't vat</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <th>Straf spul</th>
+                <tr class="even-row">
+                    <th colspan="3">Bieren van't vat</th>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td>Primus 20/25/33/40/50/100cl</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Porto Terras wit/rood</td>
-                </tr>
-                <tr>
-                    <td>Super 8 Flandrien 6,4%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Vodka wit/rood</td>
-                </tr>
-                <tr>
-                    <td>Super 8 blanche 25cl/33cl 5,2%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Rum Havana wit/bruin</td>
-                </tr>
-                <tr>
-                    <td>Mystic Kriek 3,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Appleton Estate Rum</td>
-                </tr>
-                <tr>
-                    <td>La Chouffe Blond 8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Whisky Gouden Carolus</td>
-                </tr>
-                <tr>
-                    <td>Tongerlo Blond 33cl 6,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Whisky Laphroaig</td>
-                </tr>
-                <tr>
+                    <td class="justaclass"></td>
                     <td>Tongerlo X-mas 7%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Whisky Johnnie Walker</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
+                    <td>Super 8 Flandrien 6,4%</td>
+                    <td class="justaclass"></td>
                     <td>Charles Quint Blond 8,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Whisky Jack Daniels Honey</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
+                    <td>Super 8 blanche 25cl/33cl 5,2%</td>
+                    <td class="justaclass"></td>
                     <td>Gouden Carolus Whisky Infused 11,7%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Whisky Jack Daniels</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
+                    <td>Mystic Kriek 3,5%</td>
+                    <td class="justaclass"></td>
                     <td>Gouden Carolus Tripel 9%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Martini wit/rood</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
+                    <td>La Chouffe Blond 8%</td>
+                    <td class="justaclass"></td>
                     <td>Saison Dupont Bio</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Cognac Courvoisier</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
+                    <td>Tongerlo Blond 33cl 6,5%</td>
+                    <td class="justaclass"></td>
                     <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Cointreau</td>
                 </tr>
-                <tr>
-                    <th>Bieren van't fleske</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Licor 43</td>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
                 </tr>
-                <tr>
+                <tr class="even-row">
+                    <th colspan="3">Bieren van't fleske</th>
+                </tr>
+                <tr class="odd-row">
                     <td>Primus 5,2%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Gin Bombay</td>
+                    <td class="justaclass"></td>
+                    <td>Desperados 5,9%</td>
                 </tr>
-                <tr>
+                <tr class="even-row">
                     <td>Rodenbach 5,2%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
+                    <td>Palm 6%</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Ommegang Keizer Karel 8%</td>
+                    <td class="justaclass"></td>
+                    <td>Westmalle extra 4,8%</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Duvel 8,5%</td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="even-row">
+                    <th colspan="3">Speciale blondjes van't fleske</th>
+                </tr>
+                <tr class="odd-row">
+                    <td>Omer 8%</td>
+                    <td class="justaclass"></td>
+                    <td>Vliegend Varken 9%</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Cornet Oaked 8,5%</td>
+                    <td class="justaclass"></td>
+                    <td>Papegaei 8%</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Delvaux 8,5%</td>
+                    <td class="justaclass"></td>
+                    <td>Arend 8%</td>
+                </tr>
+                <tr class="even-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="odd-row">
+                    <th colspan="3">Tripelkes van't fleske</th>
+                </tr>
+                <tr class="even-row">
+                    <td>Tongerlo Tripel 9%</td>
+                    <td class="justaclass"></td>
+                    <td>Chimay wit 8%</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Westmalle Tripel 9,5%</td>
+                    <td class="justaclass"></td>
+                    <td>Kompel l'or noir 8,2%</td>
+                </tr>
+
+                <tr class="even-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="odd-row">
+                    <th colspan="3">Speciale donker en ambers van't fleske</th>
+                </tr>
+                <tr class="even-row">
+                    <td>La Trappe Quadruppel 10%</td>
+                    <td class="justaclass"></td>
+                    <td>Orval 6,2%</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Westmalle dubbel 7%</td>
+                    <td class="justaclass"></td>
+                    <td>Tongerlo bruin 33cl 6,5%</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Chimay blauw 9%</td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="even-row">
+                    <th colspan="3">Fruit en geuze bierkes van't fleske</th>
+                </tr>
+                <tr class="odd-row">
+                    <td>Super 8 Rouge 7,5%</td>
+                    <td class="justaclass"></td>
+                    <td>Geuze Boon 7%</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Cherry Chouffe 8%</td>
+                    <td class="justaclass"></td>
+                    <td>Somersby 4,5% (appel, bessen, mango)</td>
+                </tr>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="even-row">
+                    <th colspan="3">Bierkes van't fleske zonder, zonder en bijna zonder</th>
+                </tr>
+                <tr class="odd-row">
+                    <td>Star Light Pils 0,4%</td>
+                    <td class="justaclass"></td>
+                    <td>Liefmans Fruitesse Rode vrucht 0,0%</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Cornet 0,3%</td>
+                    <td class="justaclass"></td>
+                    <td>Carlsberg 0,0%</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>La Chouffe 0,4%</td>
+                    <td class="justaclass"></td>
+                    <td>Super 8 Rouge 0,0%</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Sportzot 0,4%</td>
+                    <td class="justaclass"></td>
+                    <td>Super 8 Flandrien 0,0%</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>LaTrappe Nillis trappist 0,0%</td>
+                    <td class="justaclass"></td>
+                    <td>Kompel 0,2%</td>
+                </tr>
+                <tr class="even-row">
+                    <td class="blancotdh"></td> 
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td> 
+                </tr>
+                <tr class="odd-row">
+                    <th colspan="3">Hotties</th>             
+                </tr>
+                <tr class="even-row">
+                    <td>Koffie Fuerto</td>
+                    <td class="justaclass"></td>
+                    <td>Latte Macchiato</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Deca Fuerto</td>
+                    <td class="justaclass"></td>
+                    <td>Latte Macchiato met smaakjes (karamel, hazelnoot, vanille, speculoos)</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Espresso Fuerto</td>
+                    <td class="justaclass"></td>
+                    <td>Warme Cécémel</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Cappuccino gestoomde melk</td>
+                    <td class="justaclass"></td>
+                    <td>Chococino</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Cappuccino slagroom</td>
+                    <td class="justaclass"></td>
+                    <td>Thee (soort thee raadpleeg onze thee doos)</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Spiced Chai Latte</td>
+                    <td class="justaclass"></td>
+                    <td>Royco Soep</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Spiced Chai Latte Mokka</td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="even-row">
+                    <th colspan="3">Geestrijke koffie met slagroom</th>
+                </tr>
+                <tr class="odd-row">
+                    <td>Irish Koffie (Whisky)</td>
+                    <td class="justaclass"></td>
+                    <td>Italian Koffie(Amaretto)</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Hasseltse Koffie (Jenever)</td>
+                    <td class="justaclass"></td>
+                    <td>Chouffe Coffee (Chouffe likeur)</td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Spaanse Koffie (Licor 43)</td>
+                    <td class="justaclass"></td>
+                    <td>Baileys Koffie</td>
+                </tr>
+                <tr class="even-row">
+                    <td>French Coffee (Cognac)</td>
+                    <td class="justaclass"></td>
+                    <td>Nitro Espresso Martini Hot</td>
+                </tr>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+
+                <tr class="even-row">
+                    <th colspan="3">Fris van de koe</th>
+                </tr>
+                <tr class="odd-row">
+                    <td>Cécémel</td>
+                    <td class="justaclass"></td>
+                    <td>Iced Latte</td>
+                </tr>
+                <tr class="even-row">
+                    <td>Fristi</td>
+                    <td class="justaclass"></td>
+                    <td>Iced Latte Machiato met smaakjes(karamel, hazelnoot, vanille, speculoos)</td>
+                </tr>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="even-row">
+                    <th colspan="3">Frisse blikjes</th>
+                </tr>
+                <tr class="odd-row">
+                   <td>Red Bull</td>
+                    <td class="justaclass"></td>
+                    <td>water 50cl (Plastieke flesje)</td>
+                </tr>
+                <tr class="even-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
+                </tr>
+                <tr class="odd-row">
+                    <th colspan="3">Straf spul</th>
+                </tr>
+                <tr class="even-row">
+                    <td>Porto Terras wit/rood</td>
+                    <td class="justaclass"></td>
                     <td>Gin Copperhead</td>
                 </tr>
-                <tr>
-                    <td>Ommegang Keizer Karel 8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Vodka wit/rood</td>
+                    <td class="justaclass"></td>
                     <td>Campari</td>
                 </tr>
-                <tr>
-                    <td>Duvel 8,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Rum Havana wit/bruin</td>
+                    <td class="justaclass"></td>
                     <td>Jägermeister</td>
                 </tr>
-                <tr>
-                    <td>Desperados 5,9%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Appleton Estate Rum</td>
+                    <td class="justaclass"></td>
                     <td>Jenever</td>
                 </tr>
-                <tr>
-                    <td>Palm 6%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Whisky Gouden Carolus</td>
+                    <td class="justaclass"></td>
                     <td>Appeljenever</td>
                 </tr>
-                <tr>
-                    <td>Westmalle extra 4,8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Whisky Laphroaig</td>
+                    <td class="justaclass"></td>
                     <td>Limoncello</td>
+                </tr>               
+                <tr class="even-row">
+                    <td>Whisky Johnnie Walker</td>
+                    <td class="justaclass"></td>
+                    <td>Whisky Jack Daniels</td>
                 </tr>
-                <tr>
-                    <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Whisky Jack Daniels Honey</td>
+                    <td class="justaclass"></td>
                     <td>Tequila wit/bruin</td>
                 </tr>
-                <tr>
-                    <th>Speciale blondjes van't fleske</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Martini wit/rood</td>
+                    <td class="justaclass"></td>
                     <td>Amaretto</td>
                 </tr>
-                <tr>
-                    <td>Omer 8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Cognac Courvoisier</td>
+                    <td class="justaclass"></td>
                     <td>Baileys</td>
                 </tr>
-                <tr>
-                    <td>Cornet Oaked 8,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Cointreau</td>
+                    <td class="justaclass"></td>
                     <td>Ricard</td>
                 </tr>
-                <tr>
-                    <td>Delvaux 8,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Licor 43</td>
+                    <td class="justaclass"></td>
                     <td>Pinacello Ananas likeur</td>
                 </tr>
-                <tr>
-                    <td>Vliegend Varken 9%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+
+                <tr class="even-row">
+                    <td>Gin Bombay</td>
+                    <td class="justaclass"></td>
                     <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <td>Papegaei 8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <th>Cocktails</th>
+                    <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <td>Arend 8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <th colspan="3">Cocktails</th>
+                </tr>
+                <tr class="odd-row">
                     <td>Pornstar Martini</td>
-                </tr>
-                <tr>
-                    <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Sex on the Beach</td>
-                </tr>
-                <tr>
-                    <th>Tripelkes van't fleske</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Mojito</td>
-                </tr>
-                <tr>
-                    <td>Tongerlo Tripel 9%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Passoã Ginger/Orange/Rosa</td>
-                </tr>
-                <tr>
-                    <td>Westmalle Tripel 9,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Campari Orange</td>
-                </tr>
-                <tr>
-                    <td>Chimay wit 8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <td>Aperol Spritz</td>
-                </tr>
-                <tr>
-                    <td>Kompel l'or noir 8,2%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Pinacello Cocktail</td>
-                </tr>
-                <tr>
-                    <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Moscow Mule</td>
-                </tr>
-                <tr>
-                    <th>Speciale donker en ambers van't fleske</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Paloma Tequilla</td>
-                </tr>
-                <tr>
-                    <td>La Trappe Quadruppel 10%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Porto Tonic</td>
-                </tr>
-                <tr>
-                    <td>Westmalle dubbel 7%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
                     <td>Limoncello Tonic</td>
                 </tr>
-                <tr>
-                    <td>Chimay blauw 9%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Sex on the Beach</td>
+                    <td class="justaclass"></td>
                     <td>Limoncello Spritz</td>
                 </tr>
-                <tr>
-                    <td>Orval 6,2%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Mojito</td>
+                    <td class="justaclass"></td>
                     <td>Aperol Paloma</td>
                 </tr>
-                <tr>
-                    <td>Tongerlo bruin 33cl 6,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Passoã Ginger/Orange/Rosa</td>
+                    <td class="justaclass"></td>
                     <td>Nitro Espresso Martini Cold</td>
                 </tr>
-                <tr>
-                    <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Campari Orange</td>
+                    <td class="justaclass"></td>
                     <td>Pisang Ambon (sinaas of tonic)</td>
                 </tr>
-                <tr>
-                    <th>Fruit en geuze bierkes van't fleske</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Aperol Spritz</td>
+                    <td class="justaclass"></td>
                     <td>Mai Thai</td>
                 </tr>
-                <tr>
-                    <td>Super 8 Rouge 7,5%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Pinacello Cocktail</td>
+                    <td class="justaclass"></td>
                     <td>Safari</td>
                 </tr>
-                <tr>
-                    <td>Cherry Chouffe 8%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Moscow Mule</td>
+                    <td class="justaclass"></td>
                     <td>Cuba Libre</td>
                 </tr>
-                <tr>
-                    <td>Geuze Boon 7%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Paloma Tequilla</td>
+                    <td class="justaclass"></td>
                     <td>Dark &amp; Stormy</td>
                 </tr>
-                <tr>
-                    <td>Somersby 4,5% (appel, bessen, mango)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Porto Tonic</td>
+                    <td class="justaclass"></td>
                     <td>Lazy Peach</td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td class="blancotdh"></td>
-                </tr>
-                <tr>
-                    <th>Bierkes van't fleske zonder, zonder en bijna zonder</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                </tr>
-                <tr>
-                    <td>Star Light Pils 0,4%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
                     <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <td>Cornet 0,3%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <th>Virgin drinks</th>
+                <tr class="even-row">
+                    <th colspan="3">Virgin drinks</th>
                 </tr>
-                <tr>
-                    <td>La Chouffe 0,4%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
                     <td>Tanqueray Gin 0%</td>
-                </tr>
-                <tr>
-                    <td>Sportzot 0,4%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Virgin Mojito</td>
-                </tr>
-                <tr>
-                    <td>LaTrappe Nillis trappist 0,0%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <td>Eskimo (Tonic + pompelmoes)</td>
-                </tr>
-                <tr>
-                    <td>Liefmans Fruitesse Rode vrucht 0,0%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Crodino Rosso/Biondo</td>
-                </tr>
-                <tr>
-                    <td>Carlsberg 0,0%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
                     <td>Crodino tonic</td>
                 </tr>
-                <tr>
-                    <td>Super 8 Rouge 0,0%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Virgin Mojito</td>
+                    <td class="justaclass"></td>
                     <td>Virgin Aperol</td>
                 </tr>
-                <tr>
-                    <td>Super 8 Flandrien 0,0%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Eskimo (Tonic + pompelmoes)</td>
+                    <td class="justaclass"></td>
                     <td>Virgin Amaretti Sour</td>
                 </tr>
-                <tr>
-                    <td>Kompel 0,2%</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Crodino Rosso/Biondo</td>
+                    <td class="justaclass"></td>
                     <td class="blancotdh"></td>
                 </tr>
-                <tr>
+                <tr class="odd-row">
                     <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <th>Wijnen</th>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <th>Hotties</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <th colspan="3">Wijnen</th>
+                </tr>
+                <tr class="odd-row">
                     <td>Wit - Chardonnay St Christophe</td>
-                </tr>
-                <tr>
-                    <td>Koffie Fuerto</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Rosé - Caves Saint-Christophe</td>
-                </tr>
-                <tr>
-                    <td>Deca Fuerto</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
                     <td>Rood - Silver Lining</td>
                 </tr>
-                <tr>
-                    <td>Espresso Fuerto</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Rosé - Caves Saint-Christophe</td>
+                    <td class="justaclass"></td>
                     <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <td>Cappuccino gestoomde melk</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <th>Wijnen met bubbels</th>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
+                    <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <td>Cappuccino slagroom</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <th colspan="3">Wijnen met bubbels</th>
+                </tr>
+                <tr class="odd-row">
                     <td>Cava Mas d'Ancosa Brut</td>
-                </tr>
-                <tr>
-                    <td>Spiced Chai Latte</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
                     <td>Prosecco Eterna</td>
                 </tr>
-                <tr>
-                    <td>Spiced Chai Latte Mokka</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
                     <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <td>Latte Macchiato</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <th>Fris drinken</th>
+                <tr class="even-row">
+                    <th colspan="3">Fris drinken</th>
                 </tr>
-                <tr>
-                    <td>Latte Macchiato met smaakjes (karamel, hazelnoot, vanille, speculoos)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
                     <td>Val Natuur</td>
-                </tr>
-                <tr>
-                    <td>Warme Cécémel</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Val Bruis</td>
-                </tr>
-                <tr>
-                    <td>Chococino</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Pepsi</td>
-                </tr>
-                <tr>
-                    <td>Thee (soort thee raadpleeg onze thee doos)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <td>Pepsi Max</td>
-                </tr>
-                <tr>
-                    <td>Royco Soep</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Val Lime - witte limonade</td>
-                </tr>
-                <tr>
-                    <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Val Orange - gele limonade</td>
-                </tr>
-                <tr>
-                    <th>Geestrijke koffie met slagroom</th>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Val Agrumes</td>
-                </tr>
-                <tr>
-                    <td>Irish Koffie (Whisky)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
-                    <td>Val Ice Tea</td>
-                </tr>
-                <tr>
-                    <td>Hasseltse Koffie (Jenever)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
                     <td>Val Bitter Lemon</td>
                 </tr>
-                <tr>
-                    <td>Spaanse Koffie (Licor 43)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Val Bruis</td>
+                    <td class="justaclass"></td>
                     <td>Val Tonic</td>
                 </tr>
-                <tr>
-                    <td>French Coffee (Cognac)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Pepsi</td>
+                    <td class="justaclass"></td>
                     <td>Gerolsteiner Orange fit</td>
                 </tr>
-                <tr>
-                    <td>Italian Koffie(Amaretto)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Pepsi Max</td>
+                    <td class="justaclass"></td>
                     <td>Gerolsteiner Citron fit</td>
                 </tr>
-                <tr>
-                    <td>Chouffe Coffee (Chouffe likeur)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Val Lime - witte limonade</td>
+                    <td class="justaclass"></td>
                     <td>Lipton Green Tea</td>
                 </tr>
-                <tr>
-                    <td>Baileys Koffie</td>
-                    <td style="border-bottom: 1px solid #51543f; border-top: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Val Orange - gele limonade</td>
+                    <td class="justaclass"></td>
                     <td>Canada Dry</td>
                 </tr>
-                <tr>
-                    <td>Nitro Espresso Martini Hot</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Val Agrumes</td>
+                    <td class="justaclass"></td>
                     <td>London Essence Ginger Beer/Tonic/Pink grapefruit</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Val Ice Tea</td>
+                    <td class="justaclass"></td>
                     <td>Almdudler</td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td class="blancotdh"></td>
+                    <td class="justaclass"></td>
                     <td class="blancotdh"></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <th>Fruitsapkes van de Looza</th>
+                <tr class="even-row">
+                    <th colspan="3">Fruitsapkes van de Looza</th>
                 </tr>
-                <tr>
-                    <th>Fris van de koe</th>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="odd-row">
                     <td>Sinaasappel</td>
-                </tr>
-                <tr>
-                    <td>Cécémel</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <td>Pompelmoes</td>
-                </tr>
-                <tr>
-                    <td>Fristi</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <td>Appel</td>
-                </tr>
-                <tr>
-                    <td>Iced Latte</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <td>Appel-Kers</td>
-                </tr>
-                <tr>
-                    <td>Iced Latte Machiato met smaakjes(karamel, hazelnoot, vanille, speculoos)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
-                    <td>Tomaat met kruiden</td>
-                </tr>
-                <tr>
-                    <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                    <td class="justaclass"></td>
                     <td>Perzik</td>
                 </tr>
-                <tr>
-                    <th>Frisse blikjes</th>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Pompelmoes</td>
+                    <td class="justaclass"></td>
                     <td>Passievrucht</td>
                 </tr>
-                <tr>
-                    <td>Red Bull</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="odd-row">
+                    <td>Appel</td>
+                    <td class="justaclass"></td>
                     <td>Mango</td>
                 </tr>
-                <tr>
-                    <td>water 50cl (Plastieke flesje)</td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                <tr class="even-row">
+                    <td>Appel-Kers</td>
+                    <td class="justaclass"></td>
                     <td>Ace Original</td>
-                </tr><tr>
-                    <td class="blancotdh"></td>
-                    <td style="border-bottom: 1px solid #51543f; border-right: 1px solid #51543f"></td>
+                </tr>
+                <tr class="odd-row">
+                    <td>Tomaat met kruiden</td>
+                    <td class="justaclass"></td>
                     <td>supplement grenadine</td>
                 </tr>
             </table>
+            <footer>
+                <table style="width: 100.3%; margin-bottom: -2px">
+                    <tr>
+                        <td style="width: 6%" class="yellow_blocks"></td>
+                        <td style="width: 4%" class="blanco_blocks"></td>
+                        <td style="width: 8%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 7%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 8%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 6%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 9%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 4%" class="yellow_blocks hide"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 3%" class="yellow_blocks hide"></td>
+                    </tr>
+                </table>
+                <div class="footertbl">
+                    <a href="https://www.facebook.com/profile.php?id=100094290714017" class="fa fa-facebook"></a>
+                    <a
+                        href="https://www.instagram.com/kaffeeclaude?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        class="fa fa-instagram"></a>
+                    <a href="mailto:info@kaffeeclaude.be" class="fa fa-envelope"></a>
+                </div>
+                <table style="width: 100.3%; margin-top: -2px">
+                    <tr>
+                        <td style="width: 3%" class="yellow_blocks hide"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 4%" class="yellow_blocks hide"></td>
+                        <td style="width: 1%" class="blanco_blocks hide"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 9%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 6%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 5%" class="yellow_blocks"></td>
+                        <td style="width: 8%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 7%" class="blanco_blocks"></td>
+                        <td style="width: 9%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 2%" class="yellow_blocks"></td>
+                        <td style="width: 3%" class="blanco_blocks"></td>
+                        <td style="width: 8%" class="yellow_blocks"></td>
+                        <td style="width: 4%" class="blanco_blocks"></td>
+                        <td style="width: 6%" class="yellow_blocks"></td>
+                    </tr>
+                </table>
+            </footer>
         </main>
     </body>
 </html>
